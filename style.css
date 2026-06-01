@@ -1,0 +1,520 @@
+:root {
+    --primary-green: #2f9e41;
+    --primary-dark: #1b5e20;
+    --text-main: #333333;
+    --text-light: #666666;
+    --bg-main: #ffffff;
+    --bg-alt: #f4f7f5;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Scroll Snapping Container */
+.presentation-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    /* Hide scrollbar for a cleaner presentation look */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.presentation-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+/* Individual Slides */
+.slide {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 4rem;
+}
+
+.slide.alt-bg {
+    background-color: var(--bg-alt);
+}
+
+/* Content wrapper for max width and layout */
+.content {
+    max-width: 1100px;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Background Abstract Shapes */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.shape-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--primary-green);
+    top: -100px;
+    right: -100px;
+}
+
+.shape-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--primary-dark);
+    bottom: -100px;
+    left: -100px;
+}
+
+/* Typography */
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(47, 158, 65, 0.1);
+    color: var(--primary-green);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.title .highlight {
+    color: var(--primary-green);
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-green);
+    border-radius: 2px;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.side-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-dot:hover, .nav-dot.active {
+    background-color: var(--primary-green);
+    transform: scale(1.3);
+}
+
+.nav-dot::before {
+    content: attr(title);
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--text-main);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.nav-dot:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Grids and Cards */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background: var(--glass-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(47, 158, 65, 0.15);
+}
+
+.card i {
+    font-size: 3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--text-light);
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-green);
+    box-shadow: var(--shadow-sm);
+}
+
+.benefit-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.benefit-card i {
+    font-size: 1.8rem;
+}
+
+.benefit-card ul {
+    list-style-position: inside;
+    color: var(--text-light);
+}
+
+.benefit-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgba(47, 158, 65, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    padding: 10px 0 30px 60px;
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    left: 12px;
+    top: 15px;
+    z-index: 1;
+    border: 4px solid var(--bg-alt);
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-content h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+/* Objectives Boxes */
+.obj-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.obj-box h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+/* Strategies and Sectors */
+.strategies-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.strategy-list {
+    flex: 1;
+}
+
+.strategy-list ul {
+    list-style: none;
+}
+
+.strategy-list li {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+    border-left: 3px solid var(--primary-green);
+}
+
+.sectors-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.sector {
+    background: var(--primary-dark);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.sector:hover {
+    background: var(--primary-green);
+}
+
+.sector i {
+    font-size: 2.5rem;
+}
+
+/* Science & Space */
+.science-space-flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.feature-card {
+    flex: 1;
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.feature-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+}
+
+.feature-card ul {
+    list-style: none;
+}
+
+.feature-card ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.feature-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: bold;
+}
+
+.feature-card.highlighted {
+    background: var(--primary-green);
+    color: white;
+}
+
+.feature-card.highlighted h3,
+.feature-card.highlighted ul li,
+.feature-card.highlighted ul li::before {
+    color: white;
+}
+
+/* Footer CTA */
+.footer-cta {
+    margin-top: 4rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+    color: white;
+    padding: 3rem;
+    border-radius: 16px;
+}
+
+.footer-cta h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-light);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .title { font-size: 3.5rem; }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .strategies-container { flex-direction: column; }
+    .science-space-flex { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+    .title { font-size: 2.5rem; }
+    .subtitle { font-size: 1.5rem; }
+    .section-title { font-size: 2rem; }
+    .grid-3, .grid-2, .benefits-grid { grid-template-columns: 1fr; }
+    .slide { padding: 4rem 2rem; }
+    .side-nav { display: none; }
+}

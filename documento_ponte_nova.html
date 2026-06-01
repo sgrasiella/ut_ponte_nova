@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto UT Ponte Nova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #3ecf57;
+            --blue: #3498db;
+            --dark: #1e272e;
+            --gray: #f5f6fa;
+            --text: #2f3640;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #e5e5e5; /* Only visible on screen */
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 11pt;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            margin: 0 auto 20px auto;
+            background: white;
+            position: relative;
+            page-break-after: always;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Screen only */
+        }
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; border: none; }
+        }
+        .cover {
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20mm;
+        }
+        .cover h1 {
+            font-size: 38pt;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--green);
+        }
+        .cover h2 {
+            font-size: 20pt;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #ccc;
+        }
+        .logos {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .logos img {
+            max-height: 80px;
+            filter: brightness(0) invert(1);
+        }
+        h2.section-title {
+            font-size: 22pt;
+            color: var(--dark);
+            border-bottom: 3px solid var(--green);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        h3.subsection {
+            font-size: 16pt;
+            color: var(--blue);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 11pt;
+            text-align: justify;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: var(--gray);
+            border-left: 4px solid var(--green);
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .card h4 {
+            color: var(--dark);
+            margin-bottom: 8px;
+            font-size: 12pt;
+        }
+        .highlight {
+            background: rgba(62, 207, 87, 0.1);
+            border: 1px solid var(--green);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 600;
+            color: #1b7a2d;
+            text-align: center;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 8pt;
+            color: #888;
+            border-top: 1px solid #ddd;
+            padding-top: 5mm;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="page cover">
+        <div class="logos">
+            <img src="./LogoTerritoriosDeMinas.png" alt="Parque Tecnológico">
+            <img src="./ifmg-vertical-branca.png" alt="IFMG">
+        </div>
+        <h1>DOCUMENTO EXECUTIVO</h1>
+        <h2>Parque Tecnológico Territórios de Minas</h2>
+        <div style="width: 100px; height: 5px; background: var(--green); margin: 30px auto;"></div>
+        <p style="font-size: 16pt; font-weight: 300;">Projeto de Implantação</p>
+        <p style="font-size: 24pt; font-weight: 700; margin-top: 10px;">Unidade Tecnológica de Ponte Nova/MG</p>
+        
+        <div style="margin-top: 80px; text-align: left; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; width: 100%; max-width: 500px;">
+            <p style="margin:0; font-size: 10pt; text-transform: uppercase; color: var(--green); font-weight: bold;">Coordenação</p>
+            <p style="margin:5px 0 0 0; font-size: 14pt;">Profa. Dra. Gislayne Elisana Gonçalves</p>
+            <p style="margin:0; font-size: 10pt; color: #aaa;">Pró-Reitora de Inovação, Pesquisa e Pós-Graduação (PRIPPG)</p>
+            <p style="margin:10px 0 0 0; font-size: 10pt;"><img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" style="width:12px; vertical-align:middle;"> prppg@ifmg.edu.br</p>
+        </div>
+    </div>
+
+    <!-- Page 2: Visão Geral do Parque Tecnológico -->
+    <div class="page">
+        <h2 class="section-title">1. O Parque Tecnológico Territórios de Minas</h2>
+        <p>O <strong>Parque Tecnológico Territórios de Minas</strong> é um modelo inovador e descentralizado que aproveita a infraestrutura e as competências já existentes nos diversos campi do Instituto Federal de Minas Gerais (IFMG). Sua missão é promover um desenvolvimento regional equilibrado, democratizando o acesso à tecnologia e à inovação em todo o estado.</p>
+        
+        <h3 class="subsection">1.1. O Ecossistema de Inovação</h3>
+        <p>A estrutura atua como um elo entre o IFMG (gerador de pesquisa e tecnologia), o Governo (criador de políticas de fomento) e a Indústria (transformadora do conhecimento em soluções de mercado). Este ambiente dinâmico atrai pessoas com espírito empreendedor, negócios baseados em conhecimento e capital humano altamente qualificado.</p>
+
+        <h3 class="subsection">1.2. Principais Benefícios</h3>
+        <div class="grid-2">
+            <div class="card">
+                <h4>Benefícios Econômicos</h4>
+                <ul>
+                    <li>Geração de empregos qualificados</li>
+                    <li>Atração de investimentos externos</li>
+                    <li>Fortalecimento da economia local</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Benefícios Tecnológicos</h4>
+                <ul>
+                    <li>Fomento constante à inovação</li>
+                    <li>Transferência ágil de tecnologia</li>
+                    <li>Protagonismo em pesquisa aplicada</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Benefícios Sociais</h4>
+                <ul>
+                    <li>Melhoria da qualidade de vida</li>
+                    <li>Redução do êxodo de jovens</li>
+                    <li>Inclusão social pelo trabalho</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Benefícios Educacionais</h4>
+                <ul>
+                    <li>Integração total academia-indústria</li>
+                    <li>Acesso contínuo à capacitação</li>
+                    <li>Ecossistema de aprendizado colaborativo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight">
+            "A base científica é o alicerce que sustenta a inovação e promove o desenvolvimento de tecnologias aplicadas às demandas diretas do mercado produtivo."
+        </div>
+        
+        <div class="footer">
+            <span>PRIPPG - IFMG</span>
+            <span>Documento de Apoio - Página 1</span>
+        </div>
+    </div>
+
+    <!-- Page 3: UT Ponte Nova - Vocação Econômica -->
+    <div class="page">
+        <h2 class="section-title">2. Unidade Tecnológica de Ponte Nova/MG</h2>
+        <p>Considerando a forte vocação econômica e os indicadores locais, a prospecção da Unidade Tecnológica em Ponte Nova visa integrar o ecossistema tecnológico às sólidas bases produtivas do Vale do Piranga.</p>
+
+        <h3 class="subsection">2.1. Vocação Econômica e Contexto Regional</h3>
+        <p>Localizada na Zona da Mata mineira, Ponte Nova atua como um polo regional com forte articulação entre os setores de serviços, comércio, agroindústria e saúde. O município registrou um PIB per capita de R$ 35.748,11 em 2021 (IBGE), evidenciando grande relevância econômica. O perfil municipal conta com <strong>56,5% do valor adicionado em serviços</strong>, 24,5% na indústria e 16,7% na administração pública.</p>
+        <p>Apesar da participação percentual menor direta, a <strong>agropecuária</strong> desempenha um papel de força motriz, tracionando toda a cadeia regional — do varejo à indústria. O Vale do Piranga desponta orgulhosamente como o <strong>4º maior polo de suinocultura independente do Brasil</strong>, contando com cerca de 100 mil matrizes vinculadas.</p>
+
+        <h3 class="subsection">2.2. As 4 Frentes Estratégicas de Atuação</h3>
+        <p>O projeto está sendo fundamentado nas seguintes linhas de ação prática:</p>
+        <div class="grid-2">
+            <div class="card">
+                <h4 style="color:var(--green)">1. Inovação Agroindustrial</h4>
+                <p style="margin:0; font-size:10pt;">Aplicação de tecnologias para otimizar as cadeias da proteína animal (suínos, frigoríficos) e de alimentos, garantindo sanidade e qualidade.</p>
+            </div>
+            <div class="card">
+                <h4 style="color:var(--blue)">2. Inteligência Artificial e Dados</h4>
+                <p style="margin:0; font-size:10pt;">Utilização de modelos preditivos e visão computacional na produção, gestão comercial inteligente e sustentabilidade territorial.</p>
+            </div>
+            <div class="card">
+                <h4 style="color:#e67e22">3. Saberes e Identidade</h4>
+                <p style="margin:0; font-size:10pt;">Valorização agressiva de produtos artesanais, turismo de base territorial e gastronomia autêntica do Vale do Piranga.</p>
+            </div>
+            <div class="card">
+                <h4 style="color:#e74c3c">4. Capacitação Empreendedora</h4>
+                <p style="margin:0; font-size:10pt;">Aprimoramento técnico e tecnológico focado no empresariado local, varejo e gestão financeira por meio de Cursos FIC.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>PRIPPG - IFMG</span>
+            <span>Documento de Apoio - Página 2</span>
+        </div>
+    </div>
+
+    <!-- Page 4: CEIA, CEIPARTE e Cursos FIC -->
+    <div class="page">
+        <h2 class="section-title">3. Oportunidades de Pesquisa e Formação</h2>
+
+        <div class="grid-2">
+            <div>
+                <h3 class="subsection" style="margin-top:0;">3.1. Pesquisa Aplicada (CEIA)</h3>
+                <p>O Centro de Excelência em Inteligência Artificial propõe atuar diretamente na eficiência agroindustrial e na sustentabilidade do Rio Piranga:</p>
+                <ul>
+                    <li><strong>Sanidade e Bioseguridade:</strong> Modelos preditivos de desempenho zootécnico e gestão de granjas suinícolas.</li>
+                    <li><strong>Rastreabilidade Digital:</strong> Da produção de proteína animal ao mercado consumidor final.</li>
+                    <li><strong>Sustentabilidade:</strong> Monitoramento inteligente da água com sensores IoT e modelos preventivos contra enchentes na bacia do Rio Piranga.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="subsection" style="margin-top:0;">3.2. Pesquisa Aplicada (CEIPARTE)</h3>
+                <p>O Centro de Inovação em Produtos Artesanais e Territorialidade foca no potencial de valorização do que é local:</p>
+                <ul>
+                    <li><strong>Identidade Territorial:</strong> Mapeamento e rotulagem profissional de queijos, embutidos e artesanato.</li>
+                    <li><strong>Comercialização Digital:</strong> Catálogos online e design de embalagens para pequenos produtores.</li>
+                    <li><strong>Turismo de Base:</strong> Desenvolvimento de roteiros de experiência gastronômica e economia criativa em Ponte Nova.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="subsection">3.3. Programa de Capacitação (Cursos FIC 40h)</h3>
+        <p>A Unidade prevê a qualificação intensiva de capital humano da região. Alguns dos programas propostos englobam:</p>
+        <div class="card">
+            <ul style="margin:0; column-count: 2; column-gap: 20px;">
+                <li>Gestão da Suinocultura e Indicadores</li>
+                <li>Boas Práticas de Fabricação e Rótulos</li>
+                <li>Gestão Financeira para Pequenos Negócios</li>
+                <li>Atendimento, Vendas e CRM</li>
+                <li>IA Aplicada a Comércio e Serviços</li>
+                <li>Fotografia de Produto e Marketing Digital</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <span>PRIPPG - IFMG</span>
+            <span>Documento de Apoio - Página 3</span>
+        </div>
+    </div>
+
+    <!-- Page 5: Participação da Prefeitura e Síntese -->
+    <div class="page">
+        <h2 class="section-title">4. Parceria Municipal e Síntese</h2>
+
+        <h3 class="subsection">4.1. O Papel da Prefeitura de Ponte Nova</h3>
+        <p>Para viabilizar este ecossistema completo, a parceria governamental é fundamental através de:</p>
+        <ul>
+            <li><strong>Disponibilização de Infraestrutura:</strong> Cessão de espaços estratégicos e investimentos em mobilidade e saneamento no entorno do parque.</li>
+            <li><strong>Políticas de Fomento e Incentivo:</strong> Criação de incentivos fiscais (como ISS reduzido) para atração de empresas de base tecnológica.</li>
+            <li><strong>Articulação Multissetorial:</strong> Mediação entre associações de classe (como a ACIP), instituições e a comunidade civil.</li>
+        </ul>
+
+        <div class="highlight" style="margin-top: 40px; background: #1e272e; color: #fff; border: none; text-align: left; padding: 30px;">
+            <h3 style="color: var(--green); margin-bottom: 15px; font-size: 16pt;">Síntese para Inserção no Projeto</h3>
+            <p style="color: #eee; font-size: 12pt;">A Unidade Tecnológica de Ponte Nova/MG atuará como principal instrumento de integração entre ensino, pesquisa aplicada, extensão tecnológica, empreendedorismo e desenvolvimento territorial no Vale do Piranga. O foco estará na otimização de matrizes como a agroindústria, suinocultura e comércio por meio da inovação, transformação digital e uso intensivo de Inteligência Artificial. Simultaneamente, garantirá a valorização da identidade cultural e da economia criativa da região, tornando-se o vetor de transformação inteligente da Zona da Mata.</p>
+        </div>
+
+        <div class="footer">
+            <span>PRIPPG - IFMG</span>
+            <span>Documento de Apoio - Página 4</span>
+        </div>
+    </div>
+
+</body>
+</html>

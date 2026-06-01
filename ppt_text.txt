@@ -1,0 +1,238 @@
+--- ppt/slides/slide1.xml ---
+
+
+--- ppt/slides/slide2.xml ---
+Um projeto para impulsionar a inovação e o desenvolvimento em Minas Gerais.
+Pró-Reitoria de Inovação, Pesquisa e Pós Graduação
+
+--- ppt/slides/slide3.xml ---
+O que é um Parque Tecnológico?
+Um ambiente que conecta empresas, pesquisadores e estudantes para gerar soluções inovadoras.
+
+--- ppt/slides/slide4.xml ---
+O Ecossistema de Inovação
+Pessoas com espírito empreendedor
+Profissionais altamente qualificados
+Negócios baseados em conhecimento
+
+--- ppt/slides/slide5.xml ---
+Benefícios do Parque Tecnológico
+Sociais
+Melhoria da Qualidade de Vida
+Novas Oportunidades de Emprego e Renda
+Redução do Êxodo de Jovens
+Inclusão Social
+Econômicos
+Geração de Empregos Qualificados
+Atração de Investimentos
+Fortalecimento da Economia Local
+Tecnológicos
+Fomento à Inovação
+Transferência de Tecnologia
+Educacionais
+Integração com Instituições de Ensino
+Acesso a Capacitação e Qualificação
+
+--- ppt/slides/slide6.xml ---
+Planejamento urbano integrado
+Incentivo à Economia Circular
+Impacto Socioambiental
+Desenvolvimento Sustentável
+Incentivo a tecnologias verdes
+
+--- ppt/slides/slide7.xml ---
+IFMG
+Gerador de pesquisa, desenvolvimento de tecnologias e formação de capital humano qualificado.
+Governo
+Criação de políticas de fomento
+Indústria
+Transformação de conhecimento em soluções
+Parcerias Essenciais
+
+--- ppt/slides/slide8.xml ---
+Parque Tecnológico Territórios de Minas
+Um modelo inovador e descentralizado que aproveita a infraestrutura e as competências já existentes nos diversos campi do IFMG.
+Impacto Regional
+Presença em várias regiões de Minas Gerais, promovendo um desenvolvimento equilibrado e democratizando o acesso à tecnologia e inovação.
+
+--- ppt/slides/slide9.xml ---
+Estrutura Organizacional
+IFMG REITORIA
+POLO DE INOVAÇÃO
+PRIPPG
+PARQUE TECNOLÓGICO TERRITÓRIOS DE MINAS
+Unidades Tecnológicas 
+NIT / AGÊNCIA DE INOVAÇÃO
+Centros de Excelência
+Núcleo de PI e TT
+Núcleo de Prospecção e Parcerias
+Núcleo de Empreendedorismo
+Núcleo de Convênios e Contratos
+
+--- ppt/slides/slide10.xml ---
+Governança do Parque Tecnológico
+Conselho de Administração
+Órgão máximo de governança e deliberação do Parque Tecnológico.
+Diretoria Executiva
+Responsável pela gestão operacional do Parque Tecnológico.
+Conselho Técnico-Científico
+Órgão consultivo para assessoramento em P&D e inovação.
+Unidades Tecnológicas
+Polos operacionais do Parque Tecnológico distribuídos pelo estado.
+
+--- ppt/slides/slide11.xml ---
+Composição do Conselho de Administração da UT
+1
+Membros Representantes do IFMG.
+2
+Membro Representante do Governo Municipal.
+3
+Membro Representante das entidades empresariais ou profissionais.
+Diretoria Executiva e Conselho Técnico-Científico
+Diretoria Executiva
+Gerencia as operações administrativas e financeiras do Parque Tecnológico Distribuído.
+Conselho Técnico-Científico
+Composto por especialistas de diversas áreas, assessora em P&D e inovação.
+
+--- ppt/slides/slide12.xml ---
+Objetivos do Parque Tecnológico 
+Fomentar a Inovação Tecnológica
+Estimular a pesquisa aplicada, o desenvolvimento tecnológico e a transferência de tecnologia.
+Qualificação Profissional
+Oferecer programas de capacitação e qualificação para atender às demandas do mercado.
+Apoiar Startups e Empresas de Base Tecnológica
+Estabelecer uma estrutura de apoio para startups e empresas, promovendo a criação de inovações.
+
+--- ppt/slides/slide13.xml ---
+Objetivos do Parque Tecnológico
+Fortalecer Cadeias Produtivas Locais
+Prover soluções tecnológicas que ampliem a produtividade e a sustentabilidade.
+Aproximação entre Academia e Indústria
+Estabelecer parcerias entre o IFMG, empresas e instituições públicas para o desenvolvimento conjunto de projetos tecnológicos.
+
+--- ppt/slides/slide14.xml ---
+Premissas para o Parque Tecnológico
+Alinhamento Estratégico, Missão e Visão, Planejamento Regional.
+Infraestrutura e Localização, Espaço Adequado, Conectividade.
+Parcerias e Governança, Articulação Multissetorial.
+Impacto Social e Ambiental, Sustentabilidade Ambiental, Inclusão Social.
+Incentivo à Pesquisa e Desenvolvimento (P&D), Infraestrutura para Inovação, Fomento à Inovação.
+Formação de Capital Humano, Educação e Qualificação, Transferência de Conhecimento.
+Sustentabilidade Financeira, Diversificação de Receitas.
+Monitoramento e Avaliação, Indicadores de Sucesso.
+
+--- ppt/slides/slide15.xml ---
+
+
+--- ppt/slides/slide16.xml ---
+Estratégias
+Academia-Indústria
+União entre universidades e empresas para desenvolver projetos de pesquisa e transferir tecnologias inovadoras, respondendo às necessidades reais do mercado.
+Internacionalização
+Atrair investimentos estrangeiros e conectar empresas globais com o ecossistema de pesquisa e inovação local.
+Fomento à Sustentabilidade
+Promover práticas de ESG, incentivando projetos que minimizem o impacto ambiental e garantam a responsabilidade social.
+Capacitação e Educação
+Criar programas educacionais especializados e oferecer cursos e treinamentos alinhados às demandas do mercado.
+
+--- ppt/slides/slide17.xml ---
+Setores
+Industrial
+1
+Comercial
+2
+Agropecuário
+3
+Turismo
+4
+
+--- ppt/slides/slide18.xml ---
+Base Científica
+A base científica é fundamental para o sucesso e a relevância de um parque tecnológico.
+Ela atua como o alicerce que sustenta a inovação, permite a geração de conhecimento e promove o desenvolvimento de tecnologias aplicadas às demandas do mercado. 
+Origem da Base Científica
+Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais
+Pesquisadores e Corpo Docente do IFMG
+Instituições de Ensino Superior (IES)
+Empresas e Indústrias
+Centros de Excelência e Laboratórios de Referência
+Redes de Pesquisa e Cooperação Internacional
+
+--- ppt/slides/slide19.xml ---
+Base Científica
+Criação de Tecnologias Disruptivas
+Estímulo ao Empreendedorismo Tecnológico
+Geração de Conhecimento
+Pesquisa e Desenvolvimento (P&D)
+Capacitação Profissional
+Transferência de Tecnologia:
+Credibilidade e Atração de Investimentos
+Reconhecimento Nacional e Internacional.
+Parcerias Estratégicas
+Estímulo à Cooperação Internacional
+
+--- ppt/slides/slide20.xml ---
+Espaço Físico: Um Ecossistema Completo
+Abrigar a gestão do parque, secretaria, salas de reunião e áreas de apoio administrativo, garantindo um ambiente de trabalho funcional e profissional.
+Oferecer espaços para startups, spin-offs e empresas em estágio inicial de desenvolvimento, proporcionando um ambiente de incubação e aceleração de negócios.
+Atender demandas específicas de pesquisa e desenvolvimento de produtos e serviços, proporcionando um ambiente de pesquisa e desenvolvimento (P&D) completo e moderno.
+
+--- ppt/slides/slide21.xml ---
+Espaço Físico 
+Fomentar a criação e prototipagem de ideias e produtos, oferecendo um ambiente de trabalho colaborativo e equipado.
+Hospedar empresas já estabelecidas que desejam interagir com o ecossistema do parque, proporcionando um ambiente de networking e troca de conhecimento.
+Realizar capacitações e apresentações de projetos, oferecendo um espaço de aprendizado e desenvolvimento profissional.
+Promover integração e networking entre os usuários do parque, criando um ambiente de colaboração e sinergia.
+
+--- ppt/slides/slide22.xml ---
+Infraestrutura Essencial
+1
+Oferecer suporte tecnológico robusto para as empresas do parque, garantindo a segurança e confiabilidade dos dados.
+2
+Facilitar a conexão entre empresas, investidores e parceiros, proporcionando um ambiente propício para negócios e investimentos.
+3
+Atender às demandas de transporte e locomoção dos usuários, proporcionando um ambiente acessível e prático.
+4
+Permitir o crescimento futuro do parque, garantindo espaço para a expansão e evolução do ecossistema.
+
+--- ppt/slides/slide23.xml ---
+Participação da Prefeitura
+Disponibilização de Infraestrutura
+Terrenos e Espaços: A prefeitura pode ceder áreas adequadas para a instalação da Unidade Tecnológica, com localização estratégica que facilite o acesso e a logística.
+Infraestrutura Básica: Investimentos em saneamento, energia, transporte e telecomunicações são fundamentais para criar um ambiente propício ao desenvolvimento tecnológico.
+Integração Urbana: Planejamento urbano que incorpore o parque à dinâmica das cidades, promovendo conexões com bairros residenciais e áreas comerciais.
+
+--- ppt/slides/slide24.xml ---
+Participação da Prefeitura
+Fomento Econômico e Políticas de Incentivo
+Incentivos Fiscais: Isenções ou reduções de impostos municipais, como ISS (Imposto Sobre Serviços), podem atrair empresas para se instalarem na Unidade Tecnológica.
+Apoio Financeiro: Parcerias para captar recursos estaduais e federais ou para criar fundos de investimento na Unidade Tecnológica.
+Promoção de Negócios Locais: Incentivar a integração de empresas locais ao ecossistema do parque, fomentando sua modernização e competitividade.
+
+--- ppt/slides/slide25.xml ---
+Participação da Prefeitura
+Articulação com Comunidade e Stakeholders
+Envolvimento da População: Sensibilização da comunidade sobre os benefícios da Unidade Tecnológica, como geração de empregos, qualificação profissional e melhoria da qualidade de vida.
+Coordenação com Instituições Locais: Parcerias com escolas, universidades, associações comerciais e sindicatos para fortalecer o ecossistema de inovação.
+Facilitação de Diálogo com Setores Industriais: A prefeitura pode atuar como mediadora entre o parque e empresas locais ou regionais.
+
+--- ppt/slides/slide26.xml ---
+Participação da Prefeitura
+Desenvolvimento de Capital Humano
+Educação Técnica e Profissionalizante: As prefeituras podem investir em programas de capacitação alinhados às demandas tecnológicas da Unidade Tecnológica, fortalecendo a empregabilidade local.
+Parcerias com Instituições de Ensino: Apoiar iniciativas do IFMG e de outras universidades para ampliar a oferta de cursos e especializações voltados às áreas de inovação.
+Fomento ao Empreendedorismo: Criação de programas e eventos que incentivem startups e pequenas empresas locais a se conectarem com o parque.
+
+--- ppt/slides/slide27.xml ---
+Desafios
+Desen...
+Educação ...
+
+--- ppt/slides/slide28.xml ---
+Oportunidades
+Desen...
+Educação ...
+
+--- ppt/slides/slide29.xml ---
+
+
