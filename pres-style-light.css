@@ -1,0 +1,353 @@
+/* ==========================================================================
+   LIGHT THEME OVERRIDES FOR DATASHOW (PROJECTORS)
+   ========================================================================== */
+
+:root {
+  --white: #111111;
+  --off-white: #222222;
+  --dark: #ffffff;
+  --dark-2: #f8f9fa;
+  --dark-3: #e9ecef;
+  --muted: #6c757d;
+}
+
+/* Force body and slides background and text */
+html, body, .deck {
+  background: var(--dark) !important;
+  color: var(--white) !important;
+}
+
+.slide {
+  background: var(--dark) !important;
+  color: var(--white) !important;
+}
+
+/* Force dark slide overrides to white background */
+.slide-dark {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.slide-cover {
+  background: #ffffff !important;
+}
+
+.slide-closing {
+  background: #ffffff !important;
+}
+
+/* Adjust inline styled text colors in slides */
+.slide-dark p, 
+.slide-dark h1, 
+.slide-dark h2, 
+.slide-dark h3, 
+.slide-dark h4, 
+.slide-dark h5, 
+.slide-dark li, 
+.slide-dark span, 
+.slide-dark strong,
+.slide-cover p,
+.slide-cover h1,
+.slide-cover h2,
+.slide-cover span,
+.slide-cover strong,
+.slide-closing p,
+.slide-closing h2,
+.slide-closing span,
+.slide-closing strong,
+.slide-split p,
+.slide-split h1,
+.slide-split h2,
+.slide-split h3,
+.slide-split h4,
+.slide-split h5,
+.slide-split li,
+.slide-split span,
+.slide-split strong {
+  color: #111111 !important;
+}
+
+/* Specific text highlighted text colors keep color */
+.text-green, .highlight-text {
+  color: #2f9e41 !important;
+}
+
+/* Black Cards in Light Theme (remain black with white text) */
+div[style*="background: #000000"],
+div[style*="background: #000"],
+div[style*="background:#000000"],
+div[style*="background:#000"],
+.gov-card-h, 
+.obj-item, 
+.pref-card, 
+.strat-card, 
+.ut-pillar, 
+.detail-item,
+.c-metric,
+.glass-card-sm,
+.hub-card,
+.vision-card,
+.highlight-box,
+.slide-closing .reveal-up.delay-2 {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Force text inside black cards to be white (using high-specificity selectors to override slide level colors) */
+.slide .gov-card-h h1, .slide .gov-card-h h2, .slide .gov-card-h h3, .slide .gov-card-h h4, .slide .gov-card-h p, .slide .gov-card-h span, .slide .gov-card-h strong, .slide .gov-card-h li, .slide .gov-card-h a,
+.slide .obj-item h1, .slide .obj-item h2, .slide .obj-item h3, .slide .obj-item h4, .slide .obj-item p, .slide .obj-item span, .slide .obj-item strong, .slide .obj-item li,
+.slide .pref-card h1, .slide .pref-card h2, .slide .pref-card h3, .slide .pref-card h4, .slide .pref-card p, .slide .pref-card span, .slide .pref-card strong, .slide .pref-card li,
+.slide .strat-card h1, .slide .strat-card h2, .slide .strat-card h3, .slide .strat-card h4, .slide .strat-card p, .slide .strat-card span, .slide .strat-card strong, .slide .strat-card li,
+.slide .ut-pillar h1, .slide .ut-pillar h2, .slide .ut-pillar h3, .slide .ut-pillar h4, .slide .ut-pillar p, .slide .ut-pillar span, .slide .ut-pillar strong, .slide .ut-pillar li,
+.slide .detail-item h1, .slide .detail-item h2, .slide .detail-item h3, .slide .detail-item h4, .slide .detail-item p, .slide .detail-item span, .slide .detail-item strong, .slide .detail-item li,
+.slide .c-metric h1, .slide .c-metric h2, .slide .c-metric h3, .slide .c-metric h4, .slide .c-metric p, .slide .c-metric span, .slide .c-metric strong, .slide .c-metric li,
+.slide .glass-card-sm h1, .slide .glass-card-sm h2, .slide .glass-card-sm h3, .slide .glass-card-sm h4, .slide .glass-card-sm p, .slide .glass-card-sm span, .slide .glass-card-sm strong, .slide .glass-card-sm li,
+.slide .hub-card h1, .slide .hub-card h2, .slide .hub-card h3, .slide .hub-card h4, .slide .hub-card p, .slide .hub-card span, .slide .hub-card strong, .slide .hub-card li,
+.slide .vision-card h1, .slide .vision-card h2, .slide .vision-card h3, .slide .vision-card h4, .slide .vision-card p, .slide .vision-card span, .slide .vision-card strong, .slide .vision-card li,
+.slide .highlight-box h1, .slide .highlight-box h2, .slide .highlight-box h3, .slide .highlight-box h4, .slide .highlight-box p, .slide .highlight-box span, .slide .highlight-box strong, .slide .highlight-box li,
+.slide div[style*="background: #000000"] h1, .slide div[style*="background: #000000"] h2, .slide div[style*="background: #000000"] h3, .slide div[style*="background: #000000"] h4, .slide div[style*="background: #000000"] p, .slide div[style*="background: #000000"] span, .slide div[style*="background: #000000"] strong, .slide div[style*="background: #000000"] li,
+.slide div[style*="background: #000"] h1, .slide div[style*="background: #000"] h2, .slide div[style*="background: #000"] h3, .slide div[style*="background: #000"] h4, .slide div[style*="background: #000"] p, .slide div[style*="background: #000"] span, .slide div[style*="background: #000"] strong, .slide div[style*="background: #000"] li,
+.slide div[style*="background:#000000"] h1, .slide div[style*="background:#000000"] h2, .slide div[style*="background:#000000"] h3, .slide div[style*="background:#000000"] h4, .slide div[style*="background:#000000"] p, .slide div[style*="background:#000000"] span, .slide div[style*="background:#000000"] strong, .slide div[style*="background:#000000"] li,
+.slide div[style*="background:#000"] h1, .slide div[style*="background:#000"] h2, .slide div[style*="background:#000"] h3, .slide div[style*="background:#000"] h4, .slide div[style*="background:#000"] p, .slide div[style*="background:#000"] span, .slide div[style*="background:#000"] strong, .slide div[style*="background:#000"] li,
+.slide-closing .reveal-up.delay-2 h2, .slide-closing .reveal-up.delay-2 p, .slide-closing .reveal-up.delay-2 span, .slide-closing .reveal-up.delay-2 strong, .slide-closing .reveal-up.delay-2 li, .slide-closing .reveal-up.delay-2 a {
+  color: #ffffff !important;
+}
+
+/* Allow icons inside black cards to retain their specific highlight colors or fall back to parent color */
+.slide .gov-card-h i, .slide .obj-item i, .slide .pref-card i, .slide .strat-card i, .slide .ut-pillar i, .slide .detail-item i, .slide .c-metric i, .slide .glass-card-sm i, .slide .hub-card i, .slide .vision-card i, .slide .highlight-box i,
+.slide div[style*="background: #000000"] i, .slide div[style*="background: #000"] i, .slide div[style*="background:#000000"] i, .slide div[style*="background:#000"] i {
+  color: inherit;
+}
+
+/* Force tag-green to have white text and correct background */
+.slide-tag.tag-green {
+  color: #ffffff !important;
+  background: var(--green) !important;
+  border-color: transparent !important;
+}
+
+/* Slide tags default to dark text and border in light theme slides */
+.slide-dark .slide-tag,
+.slide-split .slide-tag {
+  color: var(--green) !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ensure slide 7 split-dark text elements are dark gray (except text-green spans) */
+#s7 .split-dark h2,
+#s7 .split-dark p.slide-desc-sm,
+#s7 .split-dark .slide-tag {
+  color: #111111 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Hover state for black cards */
+.gov-card-h:hover,
+.pref-card:hover,
+.strat-card:hover,
+.ut-pillar:hover,
+.hub-card:hover,
+.vision-card:hover,
+.highlight-box:hover {
+  border-color: var(--green) !important;
+  box-shadow: 0 8px 24px rgba(47, 158, 65, 0.4) !important;
+}
+
+/* Flowchart organization node overrides */
+.org-node {
+  background: linear-gradient(145deg, #ffffff 0%, #f1f3f5 100%) !important;
+  border: 1px solid #ced4da !important;
+  color: #111111 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.org-node:hover {
+  background: #ffffff !important;
+  border-color: #111111 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+  transform: scale(1.65) translateY(-5px) !important;
+}
+
+.org-node img {
+  filter: brightness(0.9) contrast(1.1); /* Ensure logos stand out */
+}
+
+.org-node.highlight-node {
+  background: #ffffff !important;
+  border: 2px solid var(--green) !important;
+  box-shadow: 0 6px 15px rgba(47, 158, 65, 0.2) !important;
+}
+
+/* Controls panel override */
+.controls {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #dee2e6 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.ctrl-btn {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+  color: #111111 !important;
+}
+
+.ctrl-btn:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.controls span {
+  color: #111111 !important;
+}
+
+/* Navigation dots for light background */
+.thumbnail-nav {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid #dee2e6 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.thumb-dot {
+  background: rgba(0, 0, 0, 0.1) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.thumb-dot:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: #000000 !important;
+}
+
+.thumb-dot.active {
+  background: var(--green) !important;
+  color: #ffffff !important;
+}
+
+/* Overlays on slides with image backgrounds */
+#s-sao-goncalo div[style*="background: rgba(0,0,0"],
+#s-ponte-nova-1 div[style*="background: rgba(0,0,0"] {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
+#s-sao-goncalo *, #s-ponte-nova-1 * {
+  color: #111111 !important;
+}
+
+/* Specific elements on s-sao-goncalo and others */
+.gallery-container {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+#slide-counter {
+  color: #111111 !important;
+}
+
+/* Partner cards overrides */
+.partner-card {
+  border: 1px solid #dee2e6 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.partner-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Close slide modifications */
+.close-stripe {
+  opacity: 0.03 !important;
+}
+
+.closing-logos img {
+  filter: none !important; /* Remove brightness/invert */
+  opacity: 1 !important;
+}
+
+/* Green Background Cards/Slides in Light Theme (remain green with white text) */
+.slide-green {
+  background: var(--green-dark) !important;
+  color: #ffffff !important;
+}
+
+.slide-green h1, 
+.slide-green h2, 
+.slide-green h3, 
+.slide-green h4, 
+.slide-green h5, 
+.slide-green p, 
+.slide-green span, 
+.slide-green strong,
+.slide-green li,
+.slide-green div,
+.slide-green .trio-card,
+.slide-green .trio-card * {
+  color: #ffffff !important;
+}
+
+div[style*="background: linear-gradient(135deg, var(--green)"] {
+  background: linear-gradient(135deg, var(--green), #216a2b) !important;
+  color: #ffffff !important;
+}
+
+div[style*="background: linear-gradient(135deg, var(--green)"] * {
+  color: #ffffff !important;
+}
+
+/* Adjust trio-cards inside light-theme slides (make them light grey) */
+.slide-dark .trio-card,
+.slide-cover .trio-card,
+.slide-closing .trio-card {
+  background: #f8f9fa !important;
+  border: 1px solid #dee2e6 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+.slide-dark .trio-card *,
+.slide-cover .trio-card *,
+.slide-closing .trio-card * {
+  color: #111111 !important;
+}
+
+.slide-dark .trio-card i,
+.slide-cover .trio-card i,
+.slide-closing .trio-card i {
+  color: inherit !important;
+}
+
+/* Fix white-on-white Technological benefit circle/icon in light theme */
+.node-tec .benefit-icon {
+  background: rgba(17, 17, 17, 0.1) !important;
+  border-color: #111111 !important;
+  color: #111111 !important;
+}
+
+/* Fix connector line visibility on slide 2 in light theme */
+.connector {
+  background: rgba(17, 17, 17, 0.15) !important;
+}
+
+.connector::after {
+  border-right-color: rgba(17, 17, 17, 0.3) !important;
+  border-top-color: rgba(17, 17, 17, 0.3) !important;
+}
+
+/* Fix flowchart/org-chart connection lines visibility in light theme */
+.org-chart li::before, .org-chart li::after {
+  border-top-color: rgba(17, 17, 17, 0.25) !important;
+}
+
+.org-chart li::after {
+  border-left-color: rgba(17, 17, 17, 0.25) !important;
+}
+
+.org-chart li:last-child::before {
+  border-right-color: rgba(17, 17, 17, 0.25) !important;
+}
+
+.org-chart ul ul::before {
+  border-left-color: rgba(17, 17, 17, 0.25) !important;
+}
+
+
+
+

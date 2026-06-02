@@ -16,6 +16,7 @@
       const dot = document.createElement('div');
       dot.className = 'thumb-dot' + (i === 0 ? ' active' : '');
       dot.title = `Slide ${i + 1}`;
+      dot.textContent = i + 1;
       dot.addEventListener('click', () => goTo(i));
       nav.appendChild(dot);
     });
@@ -158,24 +159,37 @@
     }, 50);
   }, { passive: false });
 
-  // Start Overlay logic for fullscreen
-  const startOverlay = document.getElementById('startOverlay');
-  if (startOverlay) {
-    startOverlay.addEventListener('click', () => {
-      try {
-        if (document.documentElement.requestFullscreen) {
-          document.documentElement.requestFullscreen().catch(() => {});
-        } else if (document.documentElement.webkitRequestFullscreen) {
-          document.documentElement.webkitRequestFullscreen();
-        }
-      } catch (err) {
-        console.log("Fullscreen API error:", err);
+  // Start Overlay logic for TV vs Datashow modes
+  window.startPresentation = (mode) => {
+    const isDatashowPage = window.location.pathname.endsWith('datashow.html');
+    if (mode === 'tv') {
+      if (isDatashowPage) {
+        window.location.href = 'index.html';
+        return;
       }
-      
+    } else if (mode === 'datashow') {
+      if (!isDatashowPage) {
+        window.location.href = 'datashow.html';
+        return;
+      }
+    }
+
+    try {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+      }
+    } catch (err) {
+      console.log("Fullscreen API error:", err);
+    }
+    
+    const startOverlay = document.getElementById('startOverlay');
+    if (startOverlay) {
       startOverlay.style.opacity = '0';
       startOverlay.style.pointerEvents = 'none';
       setTimeout(() => startOverlay.remove(), 500);
-    });
-  }
+    }
+  };
 
 })();

@@ -11,36 +11,37 @@
     rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="pres-style.css">
+  <link rel="stylesheet" href="pres-style-light.css">
 </head>
 
 <body>
 
   <!-- Start Overlay -->
   <div id="startOverlay"
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0a0e14; z-index: 10000; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; transition: opacity 0.5s ease;">
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff; z-index: 10000; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #0d1117; transition: opacity 0.5s ease;">
     <img src="LogoTerritoriosDeMinas.png" alt="Logo" style="max-width: 300px; margin-bottom: 40px;">
     
-    <h2 style="font-size: 2.2rem; margin-bottom: 30px; font-weight: 700; font-family: 'Outfit', sans-serif; letter-spacing: 0.5px;">Escolha o Modo de Exibição</h2>
+    <h2 style="font-size: 2.2rem; margin-bottom: 30px; font-weight: 700; font-family: 'Outfit', sans-serif; letter-spacing: 0.5px; color: #0d1117;">Escolha o Modo de Exibição</h2>
     
     <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
       <!-- Button TV -->
       <button onclick="startPresentation('tv')"
-        style="background: #2f9e41; color: white; border: none; padding: 15px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(47, 158, 65, 0.3); transition: all 0.3s ease;"
-        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(47, 158, 65, 0.4)';"
-        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(47, 158, 65, 0.3)';">
+        style="background: #161c24; color: #ffffff; border: none; padding: 15px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.25)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.15)';">
         <i class="ph ph-television" style="font-size: 1.8rem;"></i> Tela de TV (Escuro)
       </button>
       
       <!-- Button Datashow -->
       <button onclick="startPresentation('datashow')"
-        style="background: #ffffff; color: #0d1117; border: 2px solid #ffffff; padding: 15px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); transition: all 0.3s ease;"
-        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(255, 255, 255, 0.2)';"
-        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(255, 255, 255, 0.1)';">
+        style="background: #2f9e41; color: white; border: none; padding: 15px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(47, 158, 65, 0.3); transition: all 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(47, 158, 65, 0.4)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(47, 158, 65, 0.3)';">
         <i class="ph ph-projector-screen" style="font-size: 1.8rem;"></i> Datashow (Claro)
       </button>
     </div>
     
-    <p style="margin-top: 40px; color: rgba(255,255,255,0.4); font-size: 0.95rem;">A apresentação será iniciada em tela cheia.</p>
+    <p style="margin-top: 40px; color: rgba(0,0,0,0.5); font-size: 0.95rem;">A apresentação será iniciada em tela cheia.</p>
   </div>
 
   <!-- Navigation Controls -->
@@ -91,8 +92,8 @@
           </p>
           <div class="cover-meta reveal-up delay-3"
             style="justify-content: center; flex-direction: column; align-items: center; gap: 10px;">
-            <img src="ifmg-vertical-branca.png" alt="IFMG" class="cover-ifmg-logo"
-              style="mix-blend-mode: screen; height: 75px; width: auto; max-width: 100%;">
+            <img src="ifmg-vertical.png" alt="IFMG" class="cover-ifmg-logo"
+              style="height: 75px; width: auto; max-width: 100%;">
             <span style="color: #fff; font-weight: 500; font-size: 1.2rem; text-align: center;">Profa. Dra. Gislayne
               Elisana Gonçalves<br><span
                 style="font-size: 0.95rem; font-weight: 400; color: rgba(255,255,255,0.8);">Pró-Reitora de Inovação,
@@ -685,7 +686,7 @@
             <li>
               <!-- LEVEL 1 -->
               <div class="org-node main-node">
-                <img src="ifmg-vertical-branca.png" alt="IFMG">
+                <img src="ifmg-vertical.png" alt="IFMG">
                 <strong>Reitoria</strong>
               </div>
               <ul>
@@ -1340,7 +1341,7 @@
           style="display: flex; justify-content: center; align-items: center; gap: 60px; margin-bottom: 50px;">
           <img src="LogoTerritoriosDeMinas.png" alt="Parque Tecnológico Territórios de Minas"
             style="max-height: 150px; object-fit: contain;">
-          <img src="ifmg-vertical-branca.png" alt="IFMG" style="max-height: 150px; object-fit: contain;">
+          <img src="ifmg-vertical.png" alt="IFMG" style="max-height: 150px; object-fit: contain;">
         </div>
 
         <!-- Contatos -->
